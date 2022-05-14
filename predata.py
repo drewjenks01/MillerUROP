@@ -123,6 +123,7 @@ def set_design_matrix(trial_info, design='allTerms'):
 
     design_matrix = np.zeros((n_trials,n_terms))
     design_labels = np.zeros((n_terms,), dtype='object')
+    
 
     # Quadrant "bewteen-category" information (reflects quadrants that have same response mapping in task -- UR&LL vs UL&LR)
     design_labels[0] = 'quadrant_category'
